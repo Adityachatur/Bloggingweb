@@ -37,6 +37,7 @@ const Navbar = () => {
                     <Link to={"/"} class="text-xl font-bold text-textcol hover:text-red-900 hover:border-b-2 border-red-900">Home</Link>
                     <Link to={'/About'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">About </Link>
                     <Link to={'/Service'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Service </Link>
+                    <Link to={'/Contact'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Contact </Link>
                   
                 </div>
 
@@ -54,6 +55,7 @@ const Navbar = () => {
                         <Link to={"/"} class="mr-5 mt-3 text-xl font-bold text-textcol hover:text-red-900 hover:border-b-2 border-red-900">Home</Link>
                         <Link to={'/About'} class="mr-5 mt-3 text-textcol text-xl font-bold hover:text-red-900 hover:border-b-2 border-red-900">About </Link>
                         <Link to={'/Service'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Service </Link>
+                        <Link to={'/Contact'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Contact </Link>
                      
                     </div>
                     <div className='lg:hidden mt-4 flex justify-center items-center' onClick={toggleNavbar}>
