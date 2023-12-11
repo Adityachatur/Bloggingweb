@@ -5,7 +5,7 @@ import { addDoc } from 'firebase/firestore'
 import Headingpage from './Headingpage'
 const Contact = () => {
 
-    const[loading , setloading]=useState(true);
+    const[loading , setloading]=useState(false);
     const [form, setform] = useState({
         name: '',
         email: '',
