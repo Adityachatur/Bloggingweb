@@ -50,12 +50,22 @@ img{
 
 .card:hover {
   transform: translateY(-10px);
-  border: 2px solid gray;
-  box-shadow: 1px 2px 30px black;
+
 
 }
+.card1 {
+  transition: transform 0.2s ease-in-out;
+ 
+}
+ .card1:hover{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow:1px 2px 30px black;
+  transform: translateY(-10px);
+ }
 
 .authorimg{
   height: 150px;width: 150px;
+  
 }
 

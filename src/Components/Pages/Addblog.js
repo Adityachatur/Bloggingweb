@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Headingpage from './Headingpage'
-import { addDoc, getDocs } from 'firebase/firestore'
+import { addDoc} from 'firebase/firestore'
 import{addblog} from '../Firebase/Firebase'
 const Addblog = () => {
-    const[blog,setblog]=useState([]);
     const [form, setform] = useState({
         title: '',
         image: '',
@@ -25,18 +24,6 @@ const Addblog = () => {
         }
     }
 
-
-    useEffect(()=>{
-        async function getData(){
-            const _data = await getDocs(addblog);
-            const dataArr = [];
-            _data.forEach((Doc) =>{
-                dataArr.push({...Doc.data(), id:Doc.id});
-            });
-            setblog(dataArr);
-        }
-        getData();
-    },[]);
     return (
         <div>
             <Headingpage title={"Add Blog Page"} />
@@ -77,16 +64,6 @@ const Addblog = () => {
             </div>
             
             <button onClick={Submit} className='bg-bgcol2 text-white'>Submit data</button>
-
-
-            <div>
-                {blog.map((e,i)=>(
-                    <>
-                    <h1>{e.title}</h1>
-                    <img src={e.image} alt="" />
-                    </>
-                ))}
-            </div>
         </div>
     )
 }

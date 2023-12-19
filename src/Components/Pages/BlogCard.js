@@ -49,9 +49,9 @@ const BlogCard = ({ category }) => {
           <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12'>
             {currentBlogs.map((e, i) => (
               <Link to={`/detail/${e.id}`} key={i}>
-                <div key={i} className='m-4 h-30 card p-2'>
+                <div key={i} className='m-4  h-30 card1 p-2'>
                   <img src={e.image} className='w-full h-36' alt='' />
-                  <h3 className='mt-2 mb-2 align-text-bottom font-normal'>{e.title}</h3>
+                  <h3 className='mt-2 mb-2  align-text-bottom font-normal'>{e.title}</h3>
                   <p>
                     <FontAwesomeIcon icon={faUser} className='mr-2 text-lg' />
                     {e.author}
