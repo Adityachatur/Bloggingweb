@@ -8,12 +8,14 @@ import Footer from './Components/Navbar/Footer';
 import DetailBlog from './Components/Pages/DetailBlog';
 import Service from './Components/Pages/Service';
 import Contact from './Components/Pages/Contact';
+import Addblog from './Components/Pages/Addblog';
 function App() {
   return (
     <>
 
       <Navbar />
       <Routes>
+        <Route path='/Addblog' element={<Addblog/>}/>
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/Service' element={<Service/>}/>

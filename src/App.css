@@ -35,10 +35,12 @@ img{
 
 .card {
   transition: transform 0.2s ease-in-out;
+ 
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Adjust the value as needed for the desired hover effect */
+  transform: translateY(-10px);
+
 }
 
 .authorimg{

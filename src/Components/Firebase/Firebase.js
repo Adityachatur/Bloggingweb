@@ -22,4 +22,5 @@ const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
 export const userdata = collection(db ,'Userdata');
+export const addblog = collection(db,'Addblog');
 export default app;
