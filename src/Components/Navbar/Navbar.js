@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-bgcol1 p-4 sticky top-0 z-50">
+        <nav className="bg-bgcol1 p-4 sticky  navbar">
             <div className="container mx-auto flex items-center justify-between ">
                 <div className="text-textcol font-bold text-lg pl-10">Blogging web</div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <>
                     <div className="lg:hidden mt-2 flex flex-col items-center" onClick={toggleNavbar}>
                         <Link to={"/"} class="mr-5 mt-3 text-xl font-bold text-textcol hover:text-red-900 hover:border-b-2 border-red-900">Home</Link>
-                        <Link to={'/About'} class="mr-5 mt-3 text-textcol text-xl font-bold hover:text-red-900 hover:border-b-2 border-red-900">About </Link>
+                        <Link to={'/About'} class="mr-5 text-textcol text-xl font-bold hover:text-red-900 hover:border-b-2 border-red-900">About </Link>
                         <Link to={'/Service'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Service </Link>
                         <Link to={'/Contact'} class="mr-5 text-xl text-textcol font-bold hover:text-red-900 hover:border-b-2 border-red-900">Contact </Link>
                      

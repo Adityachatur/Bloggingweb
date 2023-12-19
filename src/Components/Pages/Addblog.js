@@ -57,12 +57,12 @@ const Addblog = () => {
 
             <div className='flex flex-col my-4'>
                 <label htmlFor="" className='font-semibold text-lg'>Enter published_date:</label>
-                <input className='w-80 border-2 h-8  rounded' type="date" name='published_date' id='published_date' placeholder='Enter published_date' value={form.published_date} onChange={(e) => setform({ ...form, category: e.target.value })} />
+                <input className='w-80 border-2 h-8  rounded' type="date" name='published_date' id='published_date' placeholder='Enter published_date' value={form.published_date} onChange={(e) => setform({ ...form, published_date: e.target.value })} />
             </div>
 
             <div className='flex flex-col my-4'>
                 <label htmlFor="" className='font-semibold text-lg'>Enter category:</label>
-                <input className='w-80 border-2 h-8  rounded' type="text" name='category' id='category' placeholder='Enter category' value={form.category} onChange={(e) => setform({ ...form, published_date: e.target.value })} />
+                <input className='w-80 border-2 h-8  rounded' type="text" name='category' id='category' placeholder='Enter category' value={form.category} onChange={(e) => setform({ ...form, category: e.target.value })} />
             </div>
 
             <div className='flex flex-col my-4'>
