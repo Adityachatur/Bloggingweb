@@ -55,9 +55,9 @@ const DetailBlog = () => {
           <div className='p-5'>
             <img src={blog.image} alt="" className='w-full mx-auto rounded ' />
             <h1 className='md:text-2xl font-Merriweather font-bold text-sm mt-2'>{blog.title}</h1>
-            <p><FontAwesomeIcon icon={faUser} className='mr-2 mt-3 h-5' /> {blog.author} | <FontAwesomeIcon icon={faCalendarDay} className=' ml-2 mr-2 mt-3 h-5' />  {blog.published_date}</p>
-            <p><FontAwesomeIcon icon={faClock} className='mr-2 mt-3 h-5' /> {blog.reading_time}</p>
-            <p className='text-base text-bgcol1 mt-3'>{blog.content}</p>
+            <p><FontAwesomeIcon icon={faUser} className='mr-2 mt-3 h-5'/> <span className='text-xl font-semibold'> {blog.author}</span> | <FontAwesomeIcon icon={faCalendarDay} className=' ml-2 mr-2 mt-3 h-5 text-xl  font-semibold' />  <span className='text-xl font-semibold'>{blog.published_date}</span></p>
+            <p><FontAwesomeIcon icon={faClock} className='mr-2 mt-3 h-5' /> <span className='text-xl font-semibold'>{blog.reading_time}</span></p>
+            <p className='text-xl  font-semibold text-bgcol1 mt-3'>{blog.content}</p>
           </div>
         </div>
 
